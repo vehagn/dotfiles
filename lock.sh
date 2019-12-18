@@ -10,7 +10,7 @@ glitched="/tmp/screenglitch.bmp"
 scrot -z $pngfile
 
 # Convert to BMP and pixelate
-convert -spread 12 -rotate -90 $pngfile $bmpfile
+convert -spread 11 -rotate -90 $pngfile $bmpfile
 
 for a in {1,2,4,5,10}
 do
