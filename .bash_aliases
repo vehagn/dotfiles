@@ -8,6 +8,8 @@ alias pi="ssh pi@129.241.146.109"
 alias msim="ssh maur_load@pet.geo.ntnu.no"
 alias toregpu="ssh -Y toresive@129.241.69.154"
 
+alias pubip="wget http://checkip.dyndns.org/ -O - -o /dev/null | cut -d: -f 2 | cut -d\< -f 1"
+
 alias officefarm="xfreerdp -g 3440x1400 --ignore-certificate -d win.ntnu.no -u vegahag --plugin cliprdr --plugin rdpdr --data printer:felles_alternativ disk:Dropbox:"/home/vegahag/Dropbox" -- officefarm.ntnu.no"
 alias winword="xfreerdp -g 768x1024 --ignore-certificate -d win.ntnu.no -u vegahag --app --plugin rail --data '||WINWORD' -- officefarm.ntnu.no"
 alias outlook="xfreerdp -g 768x1024 --ignore-certificate -d win.ntnu.no -u vegahag --app --plugin rail --data '||OUTLOOK' -- officefarm.ntnu.no"
@@ -25,3 +27,9 @@ alias snip="gnome-screenshot -i"
 
 alias pdfjoin="pdfjoin --rotateoversize false"
 alias za="zathura"
+
+alias steam="flatpak run com.valvesoftware.Steam"
+
+alias rmtrws="sed -i 's/[ \t]*$//' $1"
+
+alias protontricks-flat='flatpak run --command=protontricks com.valvesoftware.Steam --no-runtime'
